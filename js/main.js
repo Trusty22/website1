@@ -1,8 +1,7 @@
-//console.log('what us up gangg');
-//alert("ay say gang");
-//document.write("SKI")
-//process.stdout.write("jonkler");
+/* 
 
+printing a tree learning about JS
+*/
 tree = () => {
     const length = 10;
     let output = '';
