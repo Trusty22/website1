@@ -1,9 +1,9 @@
 /* 
+    printing a tree learning about JS
 
-printing a tree learning about JS
 */
 tree = () => {
-    const length = 10;
+    const length = 35; // next step print this on website and allow to change via web prompt
     let output = '';
 
     output += line(length);
@@ -26,7 +26,7 @@ tree = () => {
             output += " ";
         }
 
-        output += "\t\t" + "space: " + space + " star: " + star + " sum: " + (space + star) + " i: " + (10 - size + 1) + "\n";
+        output += "\t\t" + "space: " + space + " star: " + (star + 1) + " sum: " + (space + star + 1) + " i: " + (length - size + 1) + "\n";
     }
     return output + line(length);
 }
