@@ -29,7 +29,7 @@ const tree = (size) => {
         output += "\t\t" + "space: " + space + " star: " + (star + 1) + " sum: " + (space + star + 1) + " i: " + (length - size + 1) + "\n";
     }
 
-    document.querySelector('h2').innerHTML = (output + line(length));
+    document.querySelector('.display').innerHTML = (output + line(length));
 }
 const line = (num) => {
     let out = "";
@@ -49,3 +49,7 @@ const hello = () => {
     }
 
 }
+const charcount = (str) => {
+    return str.length;
+}
+console.log(charcount('                                       '));
