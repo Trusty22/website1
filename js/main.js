@@ -2,8 +2,8 @@
     printing a tree learning about JS
 
 */
-tree = () => {
-    const length = 35; // next step print this on website and allow to change via web prompt
+const tree = (size) => {
+    const length = size; // next step print this on website and allow to change via web prompt
     let output = '';
 
     output += line(length);
@@ -28,9 +28,10 @@ tree = () => {
 
         output += "\t\t" + "space: " + space + " star: " + (star + 1) + " sum: " + (space + star + 1) + " i: " + (length - size + 1) + "\n";
     }
-    return output + line(length);
+
+    document.querySelector('h2').innerHTML = (output + line(length));
 }
-line = (num) => {
+const line = (num) => {
     let out = "";
     for (let i = 0; i < (2 * num) + 1; i++) {
         out += "-"
@@ -39,4 +40,12 @@ line = (num) => {
     return out;
 }
 
-console.log(tree());
+const hello = () => {
+
+    if (document.querySelector('h1').innerHTML == 'Goodbye') {
+        document.querySelector('h1').innerHTML = 'hello';
+    } else {
+        document.querySelector('h1').innerHTML = 'Goodbye';
+    }
+
+}

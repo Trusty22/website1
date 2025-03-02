@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,23 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>QuickStart Page</title>
-
-    <link rel="stylesheet" type="text/css" href="../project3/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../project3/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../website1/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../website1/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../website1/css/fontawesome.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+    <title>Tree's</title>
+
+    <script src="../website1/js/main.js"></script>
 </head>
 
 <body>
     <header>
 
     </header>
+    <div>
+        <h1>Hello</h1>
+        <button onclick='hello()'>Hello</button>
+
+        <form onsubmit="let output = tree(document.getElementById('userIn').value); return false">
+            <input type="text" id="userIn" placeholder="Enter a Number">
+            <button type="submit">Submit</button>
+        </form>
+        <h2>k</h2>
+        <div class="ans" id="treeprint"></div>
+    </div>
     <footer>
 
     </footer>
 </body>
-
-<script src="../website1/js/main.js"></script>
 
 </html>
