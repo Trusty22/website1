@@ -21,18 +21,33 @@
 
 <body>
     <header>
-
+        <div class="md-6"></div>
     </header>
-    <div class="text">
-        <h1>Hello</h1>
-        <button onclick='hello()'>Hello</button>
 
-        <form onsubmit="let output = tree(document.getElementById('userIn').value); return false">
-            <input type="text" id="userIn" placeholder="Enter a Number">
-            <button type="submit">Submit</button>
-        </form>
-        <div class="display"></div>
-    </div>
+    <main>
+        <section class="jsc">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Hello</h1>
+                    <button class="btn" onclick='hello()'>Hello</button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="treeform">
+                        <form onsubmit="let output = tree(document.getElementById('userIn').value); return false">
+                            <input type="text" id="userIn" placeholder="Enter a Number">
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                        <div class="display"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
     <footer>
 
     </footer>

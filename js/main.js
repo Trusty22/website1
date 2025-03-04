@@ -43,13 +43,14 @@ const line = (num) => {
 const hello = () => {
 
     if (document.querySelector('h1').innerHTML == 'Goodbye') {
-        document.querySelector('h1').innerHTML = 'hello';
+        document.querySelector('h1').innerHTML = 'Hello';
+        document.querySelector('h1').style.color = 'green';
     } else {
         document.querySelector('h1').innerHTML = 'Goodbye';
+        document.querySelector('h1').style.color = 'red'
     }
 
 }
 const charcount = (str) => {
     return str.length;
 }
-console.log(charcount('                                       '));

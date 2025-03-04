@@ -6,6 +6,10 @@
     letter-spacing: 6px;
 }
 
+main {
+    display: flex;
+}
+
 h2 {
     white-space: pre-wrap;
 }
