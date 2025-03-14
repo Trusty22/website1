@@ -26,7 +26,8 @@ const tree = (size) => {
             output += " ";
         }
 
-        output += "\t\t" + "space: " + space + " star: " + (star + 1) + " sum: " + (space + star + 1) + " i: " + (length - size + 1) + "\n";
+        // output += "\t\t" + "space: " + space + " star: " + (star + 1) + " sum: " + (space + star + 1) + " i: " + (length - size + 1) + "\n";
+        output += "\n";
     }
 
     document.querySelector('.display').innerHTML = (output + line(length));

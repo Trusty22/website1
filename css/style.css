@@ -13,3 +13,37 @@ main {
 h2 {
     white-space: pre-wrap;
 }
+
+.logo {
+    padding: 10px 0 0 0;
+}
+
+.navigation-bar {
+    width: 100%;
+    display: none;
+}
+
+.links ul {
+    width: 100%;
+    padding: 15px 0 0 0;
+    display: flex;
+}
+
+.links ul li {
+    padding: 0 10px 0 10px;
+    list-style: none;
+}
+
+/* .slide-bar::after {
+    position: absolute;
+    background-color: aqua;
+    width: 150px;
+    height: 100%;
+} */
+
+.slide-bar::before {
+    position: absolute;
+    background-color: aqua;
+    width: 150px;
+    height: 100%;
+}
